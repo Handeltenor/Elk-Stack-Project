@@ -5,7 +5,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook created may be used to install only certain pieces of it, such as Filebeat.
 
   -  _Enter the playbook file._
    - ![pentest.yml](Playbooks/Pentest-Playbook.yml)
@@ -25,12 +25,12 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancing ensures that the application will be highly overused, in addition to restricting specific access to the network.
+- The purpose of having a load balancer is to protect the servers from a DoS attack, while at the same time, distrubutes or "balances" the traffic between the servers.  Additionally, the purpose of the Jumpbox, is to protects the VM's created, from being accessed by the public.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the files from the log and system function and its performance.
+- Filebeat monitores log files
+- Metricbeat records metrics from the server and Operating System.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
