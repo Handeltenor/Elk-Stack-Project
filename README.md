@@ -73,7 +73,7 @@ The playbook implements the following tasks:
 4. Assigns Public Ports. 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-(Images/PS output.png)
+!(Images/PS output.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
