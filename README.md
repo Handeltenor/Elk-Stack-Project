@@ -106,12 +106,12 @@ SSH into the control node and follow the steps below:
 - In order to make sure that the Elk server is running, we neet to navigate to the http://publicip(elkserver):5601 URL
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-ssh RedAdmin@JumpBox(PrivateIP)
-sudo docker container list -a - Locate the ansible container
-sudo docker start (boring_robinson)
-sudo docker attach (boring_robinson)
-cd /etc/ansible
-ansible-playbook elk-playbook.yml (Installs and Configures ELK-Server)
-cd /etc/ansible/
-ansible-playbook beats-playbook.yml (Installs and Configures Beats)
-Open a new browser on Personal Workstation, navigate to (ELK-Server-PublicIP:5601/app/kibana) - This will bring up Kibana Web Portal
+1. ssh azdmin@JumpBox(PrivateIP)
+2. sudo docker container list -a - Locate the ansible container
+3. sudo docker start (boring_robinson)
+4. sudo docker attach (boring_robinson)
+5. cd /etc/ansible
+6. ansible-playbook elk-playbook.yml (Installs and Configures ELK-Server)
+7. cd /etc/ansible/
+8. ansible-playbook beats-playbook.yml (Installs and Configures Beats)
+9. Open a new browser on Personal Workstation, navigate to (ELK-Server-PublicIP:5601/app/kibana) - This will bring up Kibana Web Portal
