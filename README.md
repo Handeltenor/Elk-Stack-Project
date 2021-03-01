@@ -96,8 +96,13 @@ SSH into the control node and follow the steps below:
 
 
 - _Which file is the playbook? Where do you copy it?
-- [Elk-Playbook.yml](Playbooks/Elk-Playbook.yml) : used to install the Elk-Server.
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+- The Playbook files are:
+- [Elk-Playbook.yml](Playbooks/Elk-Playbook.yml) : used to install the Elk-Server.It is copied to the /etc/ansible/files directory.
+- _Which file do you update to make Ansible run the playbook on a specific machine?
+- The /etc/ansible/hosts.cfg file needs to be updated in order to make Ansible run the playbook on a specific machine.
+-  How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+-  In /etc/ansible/hosts you tell it where you want eachto be installed ElkServers or FileBeat.
 - _Which URL do you navigate to in order to check that the ELK server is running?
+- In order to make sure that the Elk server is running, we neet to navigate to the http://publicip(elkserver):5601 URL
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
