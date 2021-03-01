@@ -37,10 +37,10 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.4   | Linux            |
-| Web 1    | Server   | 10.0.0.7   | Linux            |
-| Web 2    | Server   | 10.0.0.6   | Linux            |
-| ELKVM    | Elkserver| 10.1.0.4   | Linux            |                  
+| Jump Box | Gateway  | 10.0.0.4   | Linux 18.04      |
+| Web 1    | Server   | 10.0.0.7   | Linux 18.04      |
+| Web 2    | Server   | 10.0.0.6   | Linux 18.04      |
+| ELKVM    | Elkserver| 10.1.0.4   | Linux 18.04      |                  
 
 ### Access Policies
 
@@ -56,9 +56,10 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | NO.                 | Public IP   |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | No.                 | Private IP address.  |
+| Web 1    | No.                 | Private IP 10.0.0.7  |
+| Web 2    | No.                 | Private IP 10.0.0.6  |
+| Elk Serv.| No.                 | SSH to IP 10.1.0.4.  |
 
 ### Elk Configuration
 
