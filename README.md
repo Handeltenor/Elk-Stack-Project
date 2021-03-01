@@ -47,7 +47,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- 72.84.225.151
+- 137.135.120.143
 
 Machines within the network can only be accessed by my public IP address
 - The Jumpbox is the only machine permitted to connet outside of the network
@@ -67,9 +67,10 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - it can be run from the command line and the created scripts will run uniform, no matter where they are running from.
 
 The playbook implements the following tasks:
-- 
-- ...
-- ...
+1. Install Docker.io and pip3
+2. Increases VM memory
+3. Download and configure the Elk Docker Container. 
+4. Assigns Public Ports. 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
